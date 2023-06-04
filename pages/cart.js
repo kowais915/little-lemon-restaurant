@@ -7,6 +7,7 @@ const Cart = () => {
 
                 title="Cart"
                 motto="Here is all your items"
+                picture= "/finalCart.png"
             />
             <h1>This is the cart page</h1>
         </>

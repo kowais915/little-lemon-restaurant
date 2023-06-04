@@ -1,6 +1,7 @@
 import styles from '@/styles/Hero.module.css'
+import Image from 'next/image' 
 
-const Hero = ({title, motto}) => {
+const Hero = ({title, motto, picture}) => {
     console.log(title)
     return ( 
         <div className={styles.hero}>
@@ -12,8 +13,13 @@ const Hero = ({title, motto}) => {
 
            </div>
 
-           <div className="right">
-       
+           <div className={styles.right}>
+                <Image
+                    src={picture}
+                    width={300}
+                    height={300}
+                    
+                />
            </div>
 
         </div>

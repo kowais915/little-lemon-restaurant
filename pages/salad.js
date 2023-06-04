@@ -1,7 +1,13 @@
+import Hero from "@/components/Hero";
+
 const Salad = () => {
     return ( 
         <>
-            <h1>This is the salad page.</h1>
+           <Hero
+                title="Salad"
+                motto="The best salad in town"
+                picture="/salads.png"
+           />
         
         </>
      );

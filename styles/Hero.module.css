@@ -11,3 +11,11 @@
 .title{
     font-size: 80px;
 }
+
+.right{
+    margin-left: 400px;
+    height: 300px;
+    width: 700px;
+    object-fit: cover;
+   
+}
