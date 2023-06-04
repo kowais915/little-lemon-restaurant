@@ -1,14 +1,18 @@
 import styles from '@/styles/Category.module.css'
+import Link from 'next/link'
 
-const Category = ({picture, title}) => {
+const Category = ({picture, links, title}) => {
     return (  
         <div className={styles.parent}>
-        <div className={styles.container} style={{background: `url(${picture})`, backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+
+          <Link href={links}>
+          <div className={styles.container} style={{background: `url(${picture})`, backgroundSize: "contain", backgroundRepeat: "no-repeat"}}>
+                
+          </div>
+                
             
-        </div>
-        
-       
-        <h3 className={styles.title}>{title}</h3>
+                <h3 className={styles.title}>{title}</h3>
+          </Link>
 
         </div>
 

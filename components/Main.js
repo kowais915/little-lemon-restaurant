@@ -1,6 +1,8 @@
 import Item from "@/components/Item";
 import styles from "@/styles/Main.module.css";
 import Category from "@/components/Category";
+import Featured from "./Featured";
+import FeaturedSecondary from "./FeaturedSecondary";
 
 const Main = () => {
     return ( 
@@ -8,7 +10,7 @@ const Main = () => {
       
             <div className={styles.container}>
 
-                <h1>Categories</h1>
+                <h1 className={styles.title}>Categories</h1>
 
                     <div className={styles.grid}>
 
@@ -16,6 +18,7 @@ const Main = () => {
                         
                         picture="/burger.png"
                         title="Burgers"
+                        links="/burgers"
 
                         />
 
@@ -24,6 +27,7 @@ const Main = () => {
                         
                         picture="/salads.png"
                         title="Salads"
+                        links="/salad"
 
                         />
 
@@ -32,8 +36,29 @@ const Main = () => {
                         
                         picture="/pizzaa.png"
                         title="Pizzas"
+                        links="/pizza"
 
                         />
+
+                    </div>
+                    <h1 className={styles.title}>Popular</h1>
+
+
+                    <div className={styles.popular}>
+
+                        <Featured
+                            picture="/pizza.jpeg"
+                        />
+
+                        <div className={styles.secondary}>
+                            <FeaturedSecondary
+                                picture="/mix.png"
+                            />
+
+                            <FeaturedSecondary
+                                picture="/burger.png"
+                            />
+                        </div>
 
                     </div>
 
