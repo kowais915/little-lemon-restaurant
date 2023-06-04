@@ -1,0 +1,43 @@
+.container{
+
+
+width: 298px;
+height: 249px;
+left: 160px;
+border: 1px solid white;
+box-shadow: 0px 5px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 21px;
+background: url('/burger.png');
+background-size: cover;
+
+
+padding: 20px;
+
+
+
+}
+
+.container:hover{
+    background: url('/burger.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateX(10px) rotate(5deg);
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+
+}
+
+.title{
+   
+    padding: 5px;
+}
+
