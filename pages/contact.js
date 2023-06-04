@@ -5,7 +5,7 @@ const Contact = () => {
 
         <>
             <Hero
-                title="Contact Us"
+                title="Contact"
                 motto="We'd love to hear from you!"
                 picture= "/pizzaa.png"
             />

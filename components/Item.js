@@ -1,13 +1,16 @@
 import styles from '@/styles/Item.module.css'
+import Image from 'next/image'
 
-const Item = () => {
+const Item = ({picture, title, description, price}) => {
+console.log(name)
     return ( 
 
         
             <div className={styles.container}>
-                    <h1>Item</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <h3>Price: $10</h3>
+                    <Image className={styles.image} src={picture} width={300} height={300} />
+                    <h2 className={styles.title}>{title}</h2>
+                    <p className={styles.desc}>{description}</p>
+                    <h3 className={styles.price}>Price: ${price}</h3>
             </div>
         
      );

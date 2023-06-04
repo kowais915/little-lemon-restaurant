@@ -1,11 +1,40 @@
 .container{
 
-width: 391.61px;
-height: 417px;
-margin-left: 230px;
-top: 2120px;
+    width: 300px;
+    height: 370px;
+    margin: 30px;
+    top: 2120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 20px;
 
-background: #FFFFFF;
-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-border-radius: 25px;
+}
+
+.container:hover{
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateX(10px) rotate(5deg);
+    scale: 1.2;
+}
+
+.image{
+    width: 259.33px;
+    border-radius: 40px;
+    height: 197.03px;
+}
+
+.desc{
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+    color: #38AB51;
+}
+
+.title{
+    text-align: center;
 }

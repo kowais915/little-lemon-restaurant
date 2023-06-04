@@ -13,3 +13,24 @@ a, li{
   list-style: none;
 }
 
+
+/* about page */
+.about{
+  margin: 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 88px;
+  margin-bottom: 88px;
+
+}
+
+.pizzaGrid{
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
