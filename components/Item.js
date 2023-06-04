@@ -2,7 +2,7 @@ import styles from '@/styles/Item.module.css'
 import Image from 'next/image'
 
 const Item = ({picture, title, description, price}) => {
-console.log(name)
+
     return ( 
 
         
