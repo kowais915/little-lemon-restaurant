@@ -1,0 +1,35 @@
+.container{
+    background-color:#38AB51;
+    width: 1450px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.brand{
+    color: white;
+    margin-left: 160px;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.links{
+    margin-top: 40px;
+    margin-right: 362px;
+
+
+}
+
+.navlink{
+    margin: 15px;
+    color: white;
+}
+
+.icon{
+ margin-left: 20px;
+ color: white;
+}
