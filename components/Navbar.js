@@ -1,11 +1,11 @@
 import styles from '@/styles/Navbar.module.css'
 import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 
-
+import {BsCartDash} from 'react-icons/bs'
 
 const Navbar = () => {
     return (  
@@ -20,11 +20,11 @@ const Navbar = () => {
 
                 <Link href="/" className={styles.navlink}>Home</Link>
                 <Link href="/about" className={styles.navlink}>About</Link>
-                <Link href="/contact" className={styles.navlink}>Book</Link>
-                <Link href="/blog" className={styles.navlink}>Contact</Link>
+                <Link href="/book" className={styles.navlink}>Book</Link>
+                <Link href="/contact" className={styles.navlink}>Contact</Link>
                 
-               <Link href="/">
-               <FontAwesomeIcon icon={faShoppingCart}  className={styles.icon}/>
+               <Link href="/cart">
+              <BsCartDash className={styles.icon}/>
                 </Link> 
                
                 

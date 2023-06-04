@@ -1,6 +1,17 @@
+import Hero from "@/components/Hero";
+
 const Pizza = () => {
     return ( 
-        <h1>This is the pizza page.</h1>
+        <>  
+
+            <Hero
+                title="Pizza"
+                motto="The best pizza in town"
+            />
+            <h1>This is the pizza page.</h1>
+        
+        </>
+        
      );
 }
  
