@@ -12,6 +12,10 @@ export const counterSlice = createSlice({
       state.cart += 1
     },
 
+    empty: (state)=>{
+      state.cart = 0
+    },
+
     decrement: (state) => {
       state.cart -= 1
     },

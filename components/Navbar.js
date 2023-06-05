@@ -3,11 +3,15 @@ import Link from 'next/link'
 import {useState} from 'react';
 import {BsCartDash} from 'react-icons/bs'
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import {empty } from '../cartRed';
 
 
 const Navbar = () => {
 
 const {cart} = useSelector(state => state.cart);
+const dispatch = useDispatch();
+
 
 
 
@@ -28,7 +32,11 @@ const {cart} = useSelector(state => state.cart);
                 <Link href="/burgers" className={styles.navlink}>Burgers</Link>
                 <Link href="/salad" className={styles.navlink}>Salad</Link>
                 <Link href="/contact" className={styles.navlink}>Contact</Link>
-                <Link href="/cart" onClick={()=>{increaseCart }}>
+                <button onClick={()=>{
+                    dispatch(empty())
+
+                }}>Empty Cart</button>
+                <Link href="/cart">
                         <BsCartDash className={styles.icon}/>
                 </Link> 
 
@@ -40,10 +48,13 @@ const {cart} = useSelector(state => state.cart);
                 }
 
                </div>
+
+               
                
                 
                 
             </div>
+            
         </nav>
     );
 }

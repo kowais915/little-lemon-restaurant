@@ -1,7 +1,7 @@
 import styles from '@/styles/Item.module.css'
 import Image from 'next/image'
 import {useDispatch} from 'react-redux'
-import {increment} from '../cart'
+import {increment} from '../cartRed'
 
 const Item = ({picture, title, description, price, inc}) => {
     const dispatch = useDispatch();
