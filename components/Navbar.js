@@ -1,6 +1,6 @@
 import styles from '@/styles/Navbar.module.css'
 import Link from 'next/link'
-
+import {useState} from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,6 +8,8 @@ import Link from 'next/link'
 import {BsCartDash} from 'react-icons/bs'
 
 const Navbar = () => {
+
+    const [cart, setCart] = useState(1)
     return (  
         <nav className={styles.container}>
             <div className={styles.brand} >
@@ -29,6 +31,9 @@ const Navbar = () => {
               <BsCartDash className={styles.icon}/>
                 </Link> 
                
+               {cart > 0 && <div className={styles.counter}>
+                <p>{cart}</p>
+               </div>}
                 
             </div>
         </nav>

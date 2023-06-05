@@ -36,5 +36,19 @@
 .icon{
  margin-left: 20px;
  color: white;
- font-size: 20px;
+ font-size: 25px;
+ position: relative;
+}
+
+.counter{
+    border: blue 1px solid;
+    width: 35px;
+    background-color: rgb(25, 142, 181);
+    color: white;
+    border-radius: 100px;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    left: 1090px;
+    bottom: 40px;
 }
