@@ -1,15 +1,15 @@
 import styles from '@/styles/Navbar.module.css'
 import Link from 'next/link'
 import {useState} from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-
-
 import {BsCartDash} from 'react-icons/bs'
+import { useSelector } from 'react-redux';
 
-const Navbar = ({cart, setCart}) => {
 
-   
+const Navbar = () => {
+
+const {cart} = useSelector(state => state.cart);
+
+
 
     return (  
         <nav className={styles.container}>
@@ -21,6 +21,7 @@ const Navbar = ({cart, setCart}) => {
 
             <div className={styles.links}>
 
+
                 <Link href="/" className={styles.navlink}>Home</Link>
                 <Link href="/about" className={styles.navlink}>About</Link>
                 <Link href="/pizza" className={styles.navlink}>Pizza</Link>
@@ -28,13 +29,19 @@ const Navbar = ({cart, setCart}) => {
                 <Link href="/salad" className={styles.navlink}>Salad</Link>
                 <Link href="/contact" className={styles.navlink}>Contact</Link>
                 <Link href="/cart" onClick={()=>{increaseCart }}>
-
-              <BsCartDash className={styles.icon}/>
+                        <BsCartDash className={styles.icon}/>
                 </Link> 
+
+
+               <div className={styles.counter}>
+
+                {
+                    cart > 0 ? <p>{cart}</p> : null
+                }
+
+               </div>
                
-               {cart > 0 && <div className={styles.counter}>
-                <p>{cart}</p>
-               </div>}
+                
                 
             </div>
         </nav>
