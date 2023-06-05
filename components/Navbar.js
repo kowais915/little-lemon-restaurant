@@ -4,7 +4,7 @@ import {useState} from 'react';
 import {BsCartDash} from 'react-icons/bs'
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import {empty } from '../cartRed';
+import {empty} from '../cartRed';
 
 
 const Navbar = () => {
@@ -41,13 +41,13 @@ const dispatch = useDispatch();
                 </Link> 
 
 
-               <div className={styles.counter}>
+               {cart > 0 && <div className={styles.counter}>
 
                 {
                     cart > 0 ? <p>{cart}</p> : null
                 }
 
-               </div>
+               </div>}
 
                
                
