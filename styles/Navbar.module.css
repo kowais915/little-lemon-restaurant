@@ -41,9 +41,9 @@
 }
 
 .counter{
-    border: blue 1px solid;
+    border:rgb(18, 213, 38) 1px solid;
     width: 35px;
-    background-color: rgb(25, 142, 181);
+    background-color: rgb(18, 213, 38);
     color: white;
     border-radius: 100px;
     padding: 5px;
