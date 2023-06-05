@@ -1,0 +1,43 @@
+.container{
+
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-bottom: 80px;
+    border: 1px solid transparent;
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+    padding-right: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    /* display: flex;
+    flex-direction: column; */
+    
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.input[type=text]:focus{
+    border: 1px solid #38AB51;
+}
+
+.textArea{
+    width: 600px;
+    height: 300px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.textArea:hover{
+    border: 1px solid #38AB51;
+}
+.form{
+    width: 800px;
+    margin: 0 auto;
+}

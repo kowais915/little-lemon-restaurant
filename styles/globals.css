@@ -34,3 +34,9 @@ a, li{
   margin: 0 auto;
   margin-top: 30px;
 }
+
+/* styling the form */
+.form{
+  width: 800px;
+  margin: 0 auto;
+}

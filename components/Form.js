@@ -1,0 +1,54 @@
+import styles from '@/styles/Form.module.css'
+
+const Form = () => {
+    return ( 
+
+    <div className={styles.form}>
+            <form action="" className={styles.container}>
+           <div className={styles.name}>
+                <label>
+                    <span>Name</span>
+                    <div>
+                        <input className = {styles.input} type="text" placeholder="Name"/>
+                    </div>
+                  
+                    
+                    </label>
+            </div>
+
+           <div className="phone">
+            
+                <label>
+                    <span>Phone</span>
+                    <div>
+                        <input className={styles.input}  type="text" placeholder="Phone"/>
+                    </div>
+                </label>
+
+           </div>
+
+            <div className="people">
+                <label>
+                    <span>No. of People</span>
+                    <div>
+                        <input className= {styles.input} type="text" placeholder="No. of People"/>
+                    </div>
+                </label>
+            </div>
+
+           <div className="msg">
+
+                <label>
+                    <span>Message to the Chef!</span>
+                    <div>
+                        <textarea  className={styles.textArea} name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </label>
+
+           </div>
+        </form>
+    </div>
+     );
+}
+ 
+export default Form;

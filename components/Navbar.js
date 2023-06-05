@@ -33,7 +33,7 @@ const dispatch = useDispatch();
                 <Link href="/pizza" className={styles.navlink}>Pizza</Link>
                 <Link href="/burgers" className={styles.navlink}>Burgers</Link>
                 <Link href="/salad" className={styles.navlink}>Salad</Link>
-                <Link href="/contact" className={styles.navlink}>Contact</Link>
+                <Link href="/book" className={styles.navlink}>Book</Link>
                 <button onClick={()=>{
                     dispatch(empty())
 
