@@ -9,13 +9,18 @@ const Item = ({picture, title, description, price, inc}) => {
     return ( 
 
         
-            <div className={styles.container} onClick={()=> {
-                dispatch(increment())
-            }}>
+            <div className={styles.container} >
                     <Image className={styles.image} src={picture} width={300} height={300} />
                     <h2 className={styles.title}>{title}</h2>
                     <p className={styles.desc}>{description}</p>
                     <h3 className={styles.price}>Price: ${price}</h3>
+                    <div className={styles.button}>
+                        <button 
+                                onClick={()=> {
+                                        dispatch(increment())
+                                    }}
+                        >Add to Cart</button>
+                    </div>
             </div>
         
      );

@@ -1,17 +1,18 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import {useState} from 'react';
+import { useSelector } from 'react-redux';
 
 const Layout = ({children}) => {
-    const [cart, setCart ] = useState(1)
+    const {bodyColor, navColor, textColor} = useSelector(state => state.toggle);
+    
 
 
 
     return ( 
         <>
             <Navbar
-            cart={cart}
-            setCart = {setCart}
+                style={{backgroundColor: `${bodyColor}`}}
             
             />
            

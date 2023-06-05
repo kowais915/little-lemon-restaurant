@@ -5,18 +5,20 @@ import {BsCartDash} from 'react-icons/bs'
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import {empty} from '../cartRed';
+import {toggle } from '../themeRed';
 
 
 const Navbar = () => {
 
 const {cart} = useSelector(state => state.cart);
+const {theme} = useSelector(state => state.toggle);
 const dispatch = useDispatch();
 
 
 
 
     return (  
-        <nav className={styles.container}>
+        <nav className={styles.container} style={{background: `${toggle}`}}>
             <div className={styles.brand} >
                 <h1>
                     <Link className = {styles.navlink} href="/">Little Lemon</Link>
@@ -36,6 +38,11 @@ const dispatch = useDispatch();
                     dispatch(empty())
 
                 }}>Empty Cart</button>
+
+                <button onClick={()=>{
+                    dispatch(toggle())
+
+                }}>dark</button>
                 <Link href="/cart">
                         <BsCartDash className={styles.icon}/>
                 </Link> 
