@@ -1,10 +1,22 @@
 import styles from '@/styles/Form.module.css'
+import {useRouter } from 'next/router'
+import { useEffect } from 'react'
+
 
 const Form = () => {
+    const router = useRouter()
+
+
+   
+
+
     return ( 
 
     <div className={styles.form}>
-            <form action="" className={styles.container}>
+            <form action="" className={styles.container} onSubmit={(e)=>{
+               e.preventDefault();
+               router.push('/thankyou')
+            }}>
            <div className={styles.name}>
                 <label>
                     <span>Name</span>
@@ -48,7 +60,7 @@ const Form = () => {
            </div>
 
            <div className={styles.btnContainer}>
-                <button className={styles.btn}>Submit</button>
+                <button className={styles.btn} >Submit</button>
            </div>
         </form>
     </div>
