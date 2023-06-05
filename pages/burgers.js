@@ -3,6 +3,7 @@ import Item from "@/components/Item";
 
 const Burger = () => {
 
+   
     const burgers = [
         {name: "Cheeseburger", price: 10, description: "The best cheeseburger in town", picture: "/burger.png"},
         {name: "Veggie Burger", price: 10, description: "The best veggie burger in town", picture: "/burger.png"},
@@ -14,6 +15,8 @@ const Burger = () => {
         {name: "Triple Burger", price: 10, description: "The best triple burger in town", picture: "/burger.png"},
 
     ]
+
+   
     return ( 
         <>
 
@@ -33,7 +36,8 @@ const Burger = () => {
                                 price={burger.price}
                                 description={burger.description}
                                 picture={burger.picture}
-
+                               
+                            
 
                             />
                         )

@@ -3,8 +3,13 @@ import styles from "@/styles/Main.module.css";
 import Category from "@/components/Category";
 import Featured from "./Featured";
 import FeaturedSecondary from "./FeaturedSecondary";
+import {useState} from 'react';
 
-const Main = () => {
+const Main = ({cart, setCart}) => {
+   
+
+
+
     return ( 
 
       
