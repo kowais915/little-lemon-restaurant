@@ -23,7 +23,7 @@
 .right:hover{
     background-position: center;
     background-repeat: no-repeat;
-    transition: 0.5s;
+    transition: 0.8s;
     cursor: pointer;
     transform: translateX(10px) rotate(5deg);
     scale: 1.5;
