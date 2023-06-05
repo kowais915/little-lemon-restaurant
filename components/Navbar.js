@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import {empty} from '../cartRed';
 import {toggle } from '../themeRed';
-
+import Item from '@/styles/Item.module.css'
 
 const Navbar = () => {
 
