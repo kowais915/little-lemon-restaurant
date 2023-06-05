@@ -1,7 +1,10 @@
 import Hero from "@/components/Hero";
 import Item from "@/components/Item";
+import {useDispatch } from 'react-redux';
 
 const Pizza = ({cart, setCart}) => {
+
+    
     const pizzas = [
         {name: "Pepperoni", price: 10, description: "The best pepperoni pizza in town", picture: "/pizza.jpeg"},
         {name: "Hawaiian", price: 10, description: "The best hawaiian pizza in town", picture: "/pizza.jpeg"},
