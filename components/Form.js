@@ -46,6 +46,10 @@ const Form = () => {
                 </label>
 
            </div>
+
+           <div className={styles.btnContainer}>
+                <button className={styles.btn}>Submit</button>
+           </div>
         </form>
     </div>
      );
