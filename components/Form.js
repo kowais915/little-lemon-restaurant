@@ -15,6 +15,10 @@ const Form = () => {
     <div className={styles.form}>
             <form action="" className={styles.container} onSubmit={(e)=>{
                e.preventDefault();
+
+               setTimeout(() => {
+                
+               }, 2000);
                router.push('/thankyou')
             }}>
            <div className={styles.name}>
