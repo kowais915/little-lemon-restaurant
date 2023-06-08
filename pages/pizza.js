@@ -1,8 +1,10 @@
 import Hero from "@/components/Hero";
 import Item from "@/components/Item";
 import {useDispatch } from 'react-redux';
+import {increment, itemsInCart} from '../cartRed'
 
 const Pizza = ({cart, setCart}) => {
+    const dispatch = useDispatch();
 
     
     const pizzas = [

@@ -1,10 +1,18 @@
 import styles from '@/styles/Item.module.css'
 import Image from 'next/image'
 import {useDispatch} from 'react-redux'
-import {increment} from '../cartRed'
+import {increment, itemsInCart} from '../cartRed'
+
 
 const Item = ({picture, title, description, price, inc}) => {
     const dispatch = useDispatch();
+
+    let data = {
+        picture: picture,
+        title: title,
+        description: description,
+        price: price,
+    }
 
     return ( 
 
@@ -18,6 +26,8 @@ const Item = ({picture, title, description, price, inc}) => {
                         <button 
                                 onClick={()=> {
                                         dispatch(increment())
+                                        dispatch(itemsInCart(data))
+
                                     }}
                         >Add to Cart</button>
                     </div>
