@@ -54,7 +54,7 @@ const Cart = () => {
                 )
                })}
 
-               <h2>{cart == 0 && <h1>Uh Oh! Nothing in here!</h1>}</h2>
+               {cart == 0 ?  <h1>Uh Oh! Nothing in here!</h1>: <h1></h1>}
             </div>
 
         </>
