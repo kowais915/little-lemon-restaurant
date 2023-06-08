@@ -22,6 +22,10 @@ export const counterSlice = createSlice({
     decrement: (state) => {
       state.cart -= 1
     },
+    removeCart: (state, action) => {
+      state.item.splice(action.payload, 1)
+      state.cart -= 1
+    },
 
     incrementByAmount: (state, action) => {
       state.cart += action.payload
@@ -30,6 +34,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount, itemsInCart, empty } = counterSlice.actions
+export const { increment, decrement, incrementByAmount, itemsInCart, empty , removeCart} = counterSlice.actions
 
 export default counterSlice.reducer

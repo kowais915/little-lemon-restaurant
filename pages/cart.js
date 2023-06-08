@@ -48,6 +48,7 @@ const Cart = () => {
                     title={item.title}
                     description={item.description}
                     price={item.price}
+                    cartPage={true}
 
                     />
                 )
