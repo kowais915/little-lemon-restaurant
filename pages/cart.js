@@ -5,11 +5,18 @@ import {useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Item from "@/components/Item";
 
+
 const Cart = () => {
+    
     
     const {cart} = useSelector(state => state.cart);
     const {item} = useSelector(state => state.cart);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        console.log("printing cart")
+        console.log(cart);
+    }, [cart, item]);
 
     console.log("printing items")
     console.log(item);

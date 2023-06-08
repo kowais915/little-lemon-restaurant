@@ -7,12 +7,19 @@ import { useDispatch } from 'react-redux';
 import {empty} from '../cartRed';
 import {toggle } from '../themeRed';
 import Item from '@/styles/Item.module.css'
+import {useEffect } from 'react';
+import { itemsInCart } from '../cartRed';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
 
+const [emptyIt, setEmptyIt ] = useState(false);
 const {cart} = useSelector(state => state.cart);
+const {item } = useSelector(state => state.cart);
 const {theme} = useSelector(state => state.toggle);
 const dispatch = useDispatch();
+const router = useRouter();
+
 
 
 
@@ -35,7 +42,10 @@ const dispatch = useDispatch();
                 <Link href="/salad" className={styles.navlink}>Salad</Link>
                 <Link href="/book" className={styles.navlink}>Book</Link>
                 <button onClick={()=>{
+                   
                     dispatch(empty())
+                    router.reload('/cart')
+                  
 
                 }}>Empty Cart</button>
 
