@@ -19,6 +19,7 @@ const Form = () => {
                setTimeout(() => {
                 
                }, 2000);
+               
                router.push('/thankyou')
             }}>
            <div className={styles.name}>
