@@ -1,8 +1,11 @@
 import styles from '@/styles/Footer.module.css'
+import {useContext } from 'react';
+import {ThemeContext } from '../context/themeContext';
 
 const Footer = () => {
+    const {color, changeColor} = useContext(ThemeContext);
     return (  
-        <footer className={styles.footer}>
+        <footer className={styles.footer} style={{background: color}}>
 
             
 
