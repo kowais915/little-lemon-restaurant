@@ -10,8 +10,12 @@ import Item from '@/styles/Item.module.css'
 import {useEffect } from 'react';
 import { itemsInCart } from '../cartRed';
 import { useRouter } from 'next/router';
+import {ThemeContext } from '../context/themeContext';
+import {useContext } from 'react';
+
 
 const Navbar = () => {
+const {changeColor, color } = useContext(ThemeContext);
 
 const [emptyIt, setEmptyIt ] = useState(false);
 const {cart} = useSelector(state => state.cart);
@@ -25,7 +29,11 @@ const router = useRouter();
 
 
     return (  
-        <nav className={styles.container} style={{background: `${toggle}`}}>
+        <nav className={styles.container} style={{background:color }} onClick={()=>{
+            return(
+                changeColor('black')
+            )
+        }}>
             <div className={styles.brand} >
                 <h1>
                     <Link className = {styles.navlink} href="/">Little Lemon</Link>

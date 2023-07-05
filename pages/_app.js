@@ -5,13 +5,14 @@ import {useState} from 'react';
 import store  from '../store.js';
 import { Provider } from 'react-redux';
 import { useSelector } from 'react-redux';
-
+import {ThemeProvider } from '../context/themeContext.js'
 export default function App({ Component, pageProps }) {
 
 
   return(
 
     <Provider store={store}>
+      <ThemeProvider>
     
         <Layout >
 
@@ -19,7 +20,7 @@ export default function App({ Component, pageProps }) {
 
 
         </Layout>
-
+        </ThemeProvider>
     </Provider>
   )
  
